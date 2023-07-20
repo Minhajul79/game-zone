@@ -35,7 +35,7 @@
 }
 
 
-.main-section-title{
+.main-section-title {
     color: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     font-size: 2.8rem;
     font-weight: 700;
@@ -51,14 +51,14 @@ header {
 
 
 /* nav style */
-.nav-title{
+.nav-title {
     display: flex;
     align-items: center;
     text-align: center;
     gap: 1.25rem;
 }
 
-.section-title span{
+.section-title span {
     color: #FF42A5;
 }
 
@@ -84,6 +84,7 @@ nav li a {
     text-decoration: none;
     color: #424242;
 }
+
 .nav-icon {
     display: flex;
     border-radius: 8px;
@@ -91,24 +92,25 @@ nav li a {
     width: 260px;
     height: 40px;
     padding: 15px 30px;
-    
+
     align-items: center;
 
 }
-.nav-icon svg{
+
+.nav-icon svg {
     margin-right: 1rem;
 }
 
 /* banner */
 
-.banner{
+.banner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 100px;
 }
 
-.banner-title{
+.banner-title {
     text-align: center;
     font-size: 95px;
     font-weight: 800;
@@ -120,11 +122,13 @@ nav li a {
     margin: 0 auto;
     align-items: center;
 }
+
 .banner img {
     margin-top: 20px;
     width: 50%;
 }
-#btn-rogue{
+
+#btn-rogue {
     border-radius: 48px;
     background: #4EC5F7;
     padding: 20px 40px;
@@ -134,7 +138,7 @@ nav li a {
 
 /* main */
 
-main{
+main {
     max-width: 1440px;
     margin: 80px auto;
 }
@@ -154,31 +158,31 @@ main{
 }
 
 .lightboxContainer {
-    position:relative;
-    display:inline-block;
-    
-  }
-   
-  .lightboxContainer:after {
-    content:url("../images/playbutton.png");
-    z-index:999;
-    position:absolute;
-    top:40%;
-    left:50%;
-    margin-left:-32px;
-    margin-top:-32px;
-  }
-   
-  .lightboxContainer img {
+    position: relative;
+    display: inline-block;
+
+}
+
+.lightboxContainer:after {
+    content: url("../images/playbutton.png");
+    z-index: 999;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-left: -32px;
+    margin-top: -32px;
+}
+
+.lightboxContainer img {
     width: 320px;
-  }
+}
 
-  .lightboxContainer img:hover{
+.lightboxContainer img:hover {
     background-color: #0B0223;
-  }
-  
+}
 
-.wplightbox{
+
+.wplightbox {
     color: black;
     text-decoration: none;
     position: relative;
@@ -188,14 +192,15 @@ main{
     font-size: 2rem;
 }
 
-.wplightbo:hover{
+.wplightbo:hover {
     background: #FF42A5;
     font-size: 1.5rem;
     padding: 15px 24px;
     border-radius: 5px;
     align-items: center;
 }
- /* play section */
+
+/* play section */
 
 .play {
     margin-top: 100px;
@@ -203,7 +208,7 @@ main{
     gap: 100px;
 }
 
-.play-content{
+.play-content {
     margin: 100px 50px;
     align-items: right;
 }
@@ -213,7 +218,7 @@ main{
     margin-left: 90px;
 }
 
- .play .play-middle-img{
+.play .play-middle-img {
     border-radius: 8px;
     color: #FFF;
     width: 350px;
@@ -224,15 +229,15 @@ main{
 
 /* game category style */
 
-.game-category{
+.game-category {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 2.8rem;
-    
+
 }
 
-.game-content:hover{
+.game-content:hover {
     width: 240px;
     height: 70px;
     font-size: 1.25rem;
@@ -240,7 +245,7 @@ main{
     border: 1px solid #FF42A5;
 }
 
-.game-content{
+.game-content {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -249,31 +254,32 @@ main{
 
 /* footer */
 
-footer{
+footer {
     width: 1444px;
     height: 400px;
     background: #0B0223;
 }
 
-.container{
+.container {
     display: flex;
     gap: 1.25rem;
     justify-content: center;
     align-items: center;
 }
 
-.container h3{
-    color: #FFF;;
+.container h3 {
+    color: #FFF;
+    ;
 }
 
-.footer-content{
+.footer-content {
     display: flex;
     justify-content: center;
     gap: 2.8rem;
     color: #FFF;
 }
 
-.footer-icon{
+.footer-icon {
     display: flex;
     justify-content: center;
     gap: 4rem;
@@ -281,7 +287,7 @@ footer{
     padding-top: 1rem;
 }
 
-.footer-description{
+.footer-description {
     display: flex;
     justify-content: center;
     gap: 3rem;
@@ -290,3 +296,72 @@ footer{
 }
 
 
+/* media query */
+
+@media screen and (max-width: 576px) {
+    header {
+        padding: 20px;
+    }
+
+    nav,
+    nav>ul,
+    .online-game-card-container,
+    .banner,
+    .game-category,
+    .play,
+    .container{
+        flex-direction: column;
+    }
+
+    .nav {
+        padding-top: 20px;
+    }
+
+    .play-img{
+        width: 90%;
+        margin-left: 0;
+    }
+
+    .play-middle-img{
+        justify-content: center;
+        position: static;
+        max-width: 350px;
+    }
+
+    .game-category{
+        flex-wrap: wrap;
+    }
+
+    .gamr-content{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .container,footer{
+        align-items: flex-start;
+    }
+
+    .footer-icon{
+        justify-content: center;
+        padding: 20px;
+    }
+    .footer-description{
+        color: #FFF;
+        text-align: center;
+    }
+}
+
+/* tablet or medium devices */
+@media screen and (min-width:576px) and (max-width: 960px) {
+    header {
+        padding: 30px;
+    }
+
+    nav,nav>ul,
+    .online-game-card-container,
+    .banner,
+    .game-category,
+    .play {
+        flex-direction: column;
+    }
+}
